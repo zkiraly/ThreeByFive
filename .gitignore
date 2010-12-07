@@ -1,0 +1,20 @@
+# xcode noise
+build
+*.pbxuser
+*.mode2v3
+*.mode1v3
+*.perspectivev*
+
+# TextMate build errors
+*.tm_build_errors
+
+# Temp nibs and swap files
+*.swp
+*~.nib
+
+# old skool
+.svn
+
+# osx noise
+.DS_Store
+profile
