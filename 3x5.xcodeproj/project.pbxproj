@@ -26,6 +26,8 @@
 		E0C2704A125EC85D0023DE2C /* CardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C27049125EC85D0023DE2C /* CardViewController.m */; };
 		E0C271B012611CD60023DE2C /* 320x212 card shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = E0C271AF12611CD60023DE2C /* 320x212 card shadow.png */; };
 		E0C272A3126289670023DE2C /* CardEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C272A2126289670023DE2C /* CardEditView.m */; };
+		E0FFA6C512AF59330025D849 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E0FFA6C412AF59330025D849 /* icon.png */; };
+		E0FFA6E212AFE6F50025D849 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E0FFA6E112AFE6F50025D849 /* icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +63,8 @@
 		E0C271AF12611CD60023DE2C /* 320x212 card shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "320x212 card shadow.png"; sourceTree = "<group>"; };
 		E0C272A1126289670023DE2C /* CardEditView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardEditView.h; sourceTree = "<group>"; };
 		E0C272A2126289670023DE2C /* CardEditView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardEditView.m; sourceTree = "<group>"; };
+		E0FFA6C412AF59330025D849 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		E0FFA6E112AFE6F50025D849 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +140,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E0FFA6C412AF59330025D849 /* icon.png */,
+				E0FFA6E112AFE6F50025D849 /* icon@2x.png */,
 				E0C271AF12611CD60023DE2C /* 320x212 card shadow.png */,
 				E0C26F10125987030023DE2C /* 320x212card.png */,
 				E0C26EB51258375D0023DE2C /* TableViewController.xib */,
@@ -210,6 +216,8 @@
 				E0C26EB71258375D0023DE2C /* TableViewController.xib in Resources */,
 				E0C26F11125987030023DE2C /* 320x212card.png in Resources */,
 				E0C271B012611CD60023DE2C /* 320x212 card shadow.png in Resources */,
+				E0FFA6C512AF59330025D849 /* icon.png in Resources */,
+				E0FFA6E212AFE6F50025D849 /* icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

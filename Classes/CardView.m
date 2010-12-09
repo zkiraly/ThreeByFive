@@ -167,7 +167,7 @@
 	if(keyboardToolbar == nil) 
 	{
 		// create the toolbar to go above the keyboard
-		keyboardToolbar = [[UIToolbar alloc] initWithFrame:CGRectZero];
+		keyboardToolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(0.0, 0.0, 100.0, 20.0)];
 		keyboardToolbar.barStyle = UIBarStyleBlackTranslucent;
 		
 		UIBarButtonItem *flexSpace = [[UIBarButtonItem alloc] 
