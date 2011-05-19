@@ -33,7 +33,7 @@
 		//[self.contentView addSubview:cardView];
 #endif		
         
-#if true
+#if false // well this does not work right now
         // lets add the HUD to the content as top view
         // but make it invisible: alpha = 0
         
@@ -88,7 +88,7 @@
     // Configure the view for the selected state
 	NSLog(@"CardCell: setSelected: %d", selected);
     
-#if true
+#if false // 
     // tell the cardView that we have been selected
     // i.e. show the HUD for the cell
     if (selected) {
@@ -99,6 +99,7 @@
         hudView.alpha = 0.0; // make the HUD invisible
     }
 #endif
+    return;
 }
 
 - (void)setContentText:(NSString *)text
