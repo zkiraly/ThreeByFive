@@ -9,6 +9,7 @@
 #import "CardCell.h"
 #import "CardViewController.h"
 #import "CardView.h"
+#import "CardHUDView.h"
 
 
 @implementation CardCell
@@ -29,11 +30,32 @@
 		cardView.center = CGPointMake(160.0, 106.0);
 		//cardView.tag = CARD_VIEW_TAG;
 		[cardView autorelease];
-		[self.contentView addSubview:cardView];
-		
+		//[self.contentView addSubview:cardView];
+#endif		
+        
+#if true
+        // lets add the HUD to the content as top view
+        // but make it invisible: alpha = 0
+        
+        NSArray *nibViews = [[NSBundle mainBundle] loadNibNamed:@"CardHUD" owner:self options:nil];
+        
+        NSLog(@"nibViews count: %d", [nibViews count]);
+        hudView = [nibViews objectAtIndex:0];
+        
+        //hudView = [[CardHUDView alloc] initHud];
+        //hudView.alpha = 0.0;
+		hudView.transform = CGAffineTransformMakeScale(0.60, 0.60);
+		[self.contentView addSubview:hudView];
+		// CGPoint center = cardCell.contentView.center;
+		hudView.center = CGPointMake(160.0, 106.0);
+		//hudView.tag = HUD_VIEW_TAG;
+		[hudView autorelease];
+        [self.contentView bringSubviewToFront:hudView];
+		//[self.contentView addSubview:cardView];
+#endif
 		self.selectionStyle = UITableViewCellSelectionStyleNone;
 
-#endif
+
 
     }
     return self;
@@ -65,6 +87,18 @@
 
     // Configure the view for the selected state
 	NSLog(@"CardCell: setSelected: %d", selected);
+    
+#if true
+    // tell the cardView that we have been selected
+    // i.e. show the HUD for the cell
+    if (selected) {
+        NSLog(@"This card has been selected");
+        hudView.alpha = 1.0; // make the HUD visible
+    } else {
+        NSLog(@"This card has been un-selected");
+        hudView.alpha = 0.0; // make the HUD invisible
+    }
+#endif
 }
 
 - (void)setContentText:(NSString *)text

@@ -49,6 +49,19 @@
 		[self addGestureRecognizer:singleFingerDTap];
 		
 		[singleFingerDTap release];
+        
+#if false
+        // TODO: add gesture recognizer for single tap, for showing the card HUD
+        // but this takes over the single tap completely i.e
+        // the table view does not get notified.
+        UITapGestureRecognizer *singleFingerSingleTap = [[UITapGestureRecognizer alloc]
+													initWithTarget:self action:@selector(handleSingleTap:)];
+		singleFingerSingleTap.numberOfTapsRequired = 1;
+		
+		[self addGestureRecognizer:singleFingerSingleTap];
+		
+		[singleFingerSingleTap release];
+#endif
 		
 #if false // was used for debugging when the views did not line up properly
 		self.layer.borderColor = [UIColor blueColor].CGColor;
@@ -138,7 +151,7 @@
 	
 }
 
-
+// handle the double tap by allowing the user to edit the text
 - (void)handleDoubleTap:(UIGestureRecognizer *)sender
 {
 	NSLog(@"TextView was double tapped!");
@@ -154,6 +167,14 @@
 	}
 
 	
+}
+
+// handle the single tap by showing the HUD for that card.
+// (ToDo: maybe scroll the card to the center too?)
+- (void)handleSingleTap:(UIGestureRecognizer *)sender
+{
+    NSLog(@"handleSingleTap: card got single tapped.");
+    return;
 }
 
 - (BOOL)textViewShouldBeginEditing:(UITextView *)aTextView {

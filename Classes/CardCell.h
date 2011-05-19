@@ -10,11 +10,16 @@
 //@class CardViewController;
 
 @class CardView;
+@class CardHUDView;
 
 @interface CardCell : UITableViewCell {
 	
 	int row; // the row number, which is the same as the card number
-	CardView *cardView;
+	CardView *cardView; // this is the card that is displayed
+    
+    // the HUD for the card
+    // it's only displayed when the cell is selected
+    CardHUDView *hudView; 
 
 }
 

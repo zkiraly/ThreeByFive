@@ -15,6 +15,8 @@
 		2899E5220DE3E06400AC0155 /* TableViewTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* TableViewTestViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* ThreeByFiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* ThreeByFiveViewController.m */; };
+		E06CF0D912D8214800018340 /* CardHUDView.m in Sources */ = {isa = PBXBuildFile; fileRef = E06CF0D812D8214800018340 /* CardHUDView.m */; };
+		E06CF0DB12D8215C00018340 /* CardHUD.xib in Resources */ = {isa = PBXBuildFile; fileRef = E06CF0DA12D8215C00018340 /* CardHUD.xib */; };
 		E0839EA8126BF16A003F8301 /* StackOfCards.m in Sources */ = {isa = PBXBuildFile; fileRef = E0839EA7126BF16A003F8301 /* StackOfCards.m */; };
 		E0C26EB61258375D0023DE2C /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C26EB41258375D0023DE2C /* TableViewController.m */; };
 		E0C26EB71258375D0023DE2C /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0C26EB51258375D0023DE2C /* TableViewController.xib */; };
@@ -28,6 +30,7 @@
 		E0C272A3126289670023DE2C /* CardEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C272A2126289670023DE2C /* CardEditView.m */; };
 		E0FFA6C512AF59330025D849 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E0FFA6C412AF59330025D849 /* icon.png */; };
 		E0FFA6E212AFE6F50025D849 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E0FFA6E112AFE6F50025D849 /* icon@2x.png */; };
+		E0FFA71612B59D130025D849 /* untitled.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0FFA71512B59D130025D849 /* untitled.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,9 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* 3x5_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 3x5_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* 3x5-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "3x5-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		E06CF0D712D8214800018340 /* CardHUDView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardHUDView.h; sourceTree = "<group>"; };
+		E06CF0D812D8214800018340 /* CardHUDView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardHUDView.m; sourceTree = "<group>"; };
+		E06CF0DA12D8215C00018340 /* CardHUD.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardHUD.xib; sourceTree = "<group>"; };
 		E0839EA6126BF16A003F8301 /* StackOfCards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackOfCards.h; sourceTree = "<group>"; };
 		E0839EA7126BF16A003F8301 /* StackOfCards.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackOfCards.m; sourceTree = "<group>"; };
 		E0C26EB31258375D0023DE2C /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
@@ -65,6 +71,7 @@
 		E0C272A2126289670023DE2C /* CardEditView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardEditView.m; sourceTree = "<group>"; };
 		E0FFA6C412AF59330025D849 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		E0FFA6E112AFE6F50025D849 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		E0FFA71512B59D130025D849 /* untitled.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = untitled.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +91,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				E0FFA71512B59D130025D849 /* untitled.xib */,
 				1D3623240D0F684500981E51 /* ThreeByFiveAppDelegate.h */,
 				1D3623250D0F684500981E51 /* ThreeByFiveAppDelegate.m */,
 				28D7ACF60DDB3853001CB0EB /* ThreeByFiveViewController.h */,
@@ -104,6 +112,8 @@
 				E0C272A2126289670023DE2C /* CardEditView.m */,
 				E0839EA6126BF16A003F8301 /* StackOfCards.h */,
 				E0839EA7126BF16A003F8301 /* StackOfCards.m */,
+				E06CF0D712D8214800018340 /* CardHUDView.h */,
+				E06CF0D812D8214800018340 /* CardHUDView.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -148,6 +158,7 @@
 				2899E5210DE3E06400AC0155 /* TableViewTestViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* 3x5-Info.plist */,
+				E06CF0DA12D8215C00018340 /* CardHUD.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -218,6 +229,8 @@
 				E0C271B012611CD60023DE2C /* 320x212 card shadow.png in Resources */,
 				E0FFA6C512AF59330025D849 /* icon.png in Resources */,
 				E0FFA6E212AFE6F50025D849 /* icon@2x.png in Resources */,
+				E0FFA71612B59D130025D849 /* untitled.xib in Resources */,
+				E06CF0DB12D8215C00018340 /* CardHUD.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +252,7 @@
 				E0C2704A125EC85D0023DE2C /* CardViewController.m in Sources */,
 				E0C272A3126289670023DE2C /* CardEditView.m in Sources */,
 				E0839EA8126BF16A003F8301 /* StackOfCards.m in Sources */,
+				E06CF0D912D8214800018340 /* CardHUDView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +270,7 @@
 				GCC_PREFIX_HEADER = 3x5_Prefix.pch;
 				INFOPLIST_FILE = "3x5-Info.plist";
 				PRODUCT_NAME = 3x5;
+				SDKROOT = iphoneos4.3;
 			};
 			name = Debug;
 		};
@@ -268,6 +283,7 @@
 				GCC_PREFIX_HEADER = 3x5_Prefix.pch;
 				INFOPLIST_FILE = "3x5-Info.plist";
 				PRODUCT_NAME = 3x5;
+				SDKROOT = iphoneos4.3;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -278,8 +294,10 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = "";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PREBINDING = NO;
 				SDKROOT = iphoneos4.2;
 			};
@@ -291,8 +309,10 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = "";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
 				SDKROOT = iphoneos4.2;

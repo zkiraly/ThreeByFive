@@ -18,7 +18,10 @@
 }
 
 - (id)initCard;
+
 - (void)handleDoubleTap:(UIGestureRecognizer *)sender;
+- (void)handleSingleTap:(UIGestureRecognizer *)sender;
+
 - (void)dismissKeyboard:(id)sender;
 - (void)setCardData:(NSDictionary *)cardData;
 - (void)textEditingEnded:(NSNotification *)notification;
