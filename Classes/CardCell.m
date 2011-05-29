@@ -15,6 +15,7 @@
 @implementation CardCell
 
 @synthesize row;
+@synthesize hud;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     if ((self = [super initWithStyle:style reuseIdentifier:reuseIdentifier])) {
@@ -33,24 +34,24 @@
 		//[self.contentView addSubview:cardView];
 #endif		
         
-#if false // well this does not work right now
+#if true // well this does not work right now
         // lets add the HUD to the content as top view
         // but make it invisible: alpha = 0
         
         NSArray *nibViews = [[NSBundle mainBundle] loadNibNamed:@"CardHUD" owner:self options:nil];
         
         NSLog(@"nibViews count: %d", [nibViews count]);
-        hudView = [nibViews objectAtIndex:0];
+        //hudView = [nibViews objectAtIndex:0];
         
         //hudView = [[CardHUDView alloc] initHud];
         //hudView.alpha = 0.0;
-		hudView.transform = CGAffineTransformMakeScale(0.60, 0.60);
-		[self.contentView addSubview:hudView];
+		//hudView.transform = CGAffineTransformMakeScale(0.60, 0.60);
+		[self.contentView addSubview:hud];
 		// CGPoint center = cardCell.contentView.center;
-		hudView.center = CGPointMake(160.0, 106.0);
+		hud.center = CGPointMake(160.0, 106.0);
 		//hudView.tag = HUD_VIEW_TAG;
-		[hudView autorelease];
-        [self.contentView bringSubviewToFront:hudView];
+		//[hudView autorelease];
+        [self.contentView bringSubviewToFront:hud];
 		//[self.contentView addSubview:cardView];
 #endif
 		self.selectionStyle = UITableViewCellSelectionStyleNone;

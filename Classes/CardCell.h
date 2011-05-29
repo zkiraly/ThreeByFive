@@ -20,6 +20,7 @@
     // the HUD for the card
     // it's only displayed when the cell is selected
     CardHUDView *hudView; 
+    IBOutlet UIView *hud;
 
 }
 
@@ -27,5 +28,6 @@
 - (void)setData:(NSDictionary *)dict ;
 
 @property int row;
+@property (nonatomic, assign) UIView *hud;
 
 @end
