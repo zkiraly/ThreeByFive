@@ -34,7 +34,8 @@
 		//[self.contentView addSubview:cardView];
 #endif		
         
-#if true // well this does not work right now
+#if true 
+        // well this does not work right now
         // lets add the HUD to the content as top view
         // but make it invisible: alpha = 0
         
@@ -44,7 +45,8 @@
         //hudView = [nibViews objectAtIndex:0];
         
         //hudView = [[CardHUDView alloc] initHud];
-        //hudView.alpha = 0.0;
+        hud.alpha = 0.0;
+        hud.hidden = false;
 		//hudView.transform = CGAffineTransformMakeScale(0.60, 0.60);
 		[self.contentView addSubview:hud];
 		// CGPoint center = cardCell.contentView.center;
@@ -54,12 +56,48 @@
         [self.contentView bringSubviewToFront:hud];
 		//[self.contentView addSubview:cardView];
 #endif
+#if true
+        // TODO: add gesture recognizer for single tap, for showing the card HUD
+        // but this takes over the single tap completely i.e
+        // the table view does not get notified.
+        UITapGestureRecognizer *singleFingerSingleTap = [[UITapGestureRecognizer alloc]
+                                                         initWithTarget:self action:@selector(handleSingleTap:)];
+		singleFingerSingleTap.numberOfTapsRequired = 1;
+        //[singleFingerSingleTap requireGestureRecognizerToFail:singleFingerDTap];
+		
+		[self.contentView addGestureRecognizer:singleFingerSingleTap];
+		
+		[singleFingerSingleTap release];
+#endif
+
 		self.selectionStyle = UITableViewCellSelectionStyleNone;
 
 
 
     }
     return self;
+}
+
+// handle the single tap by showing the HUD for that card.
+// (ToDo: maybe scroll the card to the center too?)
+- (void)handleSingleTap:(UIGestureRecognizer *)sender
+{
+    NSLog(@"CardCell: handleSingleTap: card got single tapped.");
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:0.1];
+    [UIView setAnimationDelay:0.0];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
+    if(hud.alpha == 0.0)
+    {
+        hud.alpha = 1.0;
+    }
+    else
+    {
+        hud.alpha = 0.0;
+    }
+    [UIView commitAnimations];
+    
+    return;
 }
 
 - (void)layoutSubviews

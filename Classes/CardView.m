@@ -48,7 +48,7 @@
 		
 		[self addGestureRecognizer:singleFingerDTap];
 		
-		[singleFingerDTap release];
+		
         
 #if false
         // TODO: add gesture recognizer for single tap, for showing the card HUD
@@ -57,11 +57,13 @@
         UITapGestureRecognizer *singleFingerSingleTap = [[UITapGestureRecognizer alloc]
 													initWithTarget:self action:@selector(handleSingleTap:)];
 		singleFingerSingleTap.numberOfTapsRequired = 1;
+        [singleFingerSingleTap requireGestureRecognizerToFail:singleFingerDTap];
 		
 		[self addGestureRecognizer:singleFingerSingleTap];
 		
 		[singleFingerSingleTap release];
 #endif
+        [singleFingerDTap release];
 		
 #if false // was used for debugging when the views did not line up properly
 		self.layer.borderColor = [UIColor blueColor].CGColor;
@@ -160,13 +162,19 @@
 	
 	if (location.x >=0 && location.x < 480 && location.y >=0 && location.y < 300) {
 		NSLog(@"It was in the textview.");
-		[textView becomeFirstResponder];
+		[self enterEditingMode];
 	}
 	else {
 		NSLog(@" It was outside the textView");
 	}
 
 	
+}
+
+- (void)enterEditingMode
+{
+    [textView becomeFirstResponder];
+    return;
 }
 
 // handle the single tap by showing the HUD for that card.

@@ -27,6 +27,8 @@
 - (void)setContentText:(NSString *)text;
 - (void)setData:(NSDictionary *)dict ;
 
+- (void)handleSingleTap:(UIGestureRecognizer *)sender;
+
 @property int row;
 @property (nonatomic, assign) UIView *hud;
 

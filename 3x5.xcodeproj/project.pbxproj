@@ -18,6 +18,7 @@
 		E06CF0D912D8214800018340 /* CardHUDView.m in Sources */ = {isa = PBXBuildFile; fileRef = E06CF0D812D8214800018340 /* CardHUDView.m */; };
 		E06CF0DB12D8215C00018340 /* CardHUD.xib in Resources */ = {isa = PBXBuildFile; fileRef = E06CF0DA12D8215C00018340 /* CardHUD.xib */; };
 		E0839EA8126BF16A003F8301 /* StackOfCards.m in Sources */ = {isa = PBXBuildFile; fileRef = E0839EA7126BF16A003F8301 /* StackOfCards.m */; };
+		E09639B213941AD5007F7688 /* glow.png in Resources */ = {isa = PBXBuildFile; fileRef = E09639B113941AD5007F7688 /* glow.png */; };
 		E0C26EB61258375D0023DE2C /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C26EB41258375D0023DE2C /* TableViewController.m */; };
 		E0C26EB71258375D0023DE2C /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0C26EB51258375D0023DE2C /* TableViewController.xib */; };
 		E0C26EE212593A560023DE2C /* CardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C26EE112593A560023DE2C /* CardCell.m */; };
@@ -52,6 +53,7 @@
 		E06CF0DA12D8215C00018340 /* CardHUD.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardHUD.xib; sourceTree = "<group>"; };
 		E0839EA6126BF16A003F8301 /* StackOfCards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackOfCards.h; sourceTree = "<group>"; };
 		E0839EA7126BF16A003F8301 /* StackOfCards.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackOfCards.m; sourceTree = "<group>"; };
+		E09639B113941AD5007F7688 /* glow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glow.png; sourceTree = "<group>"; };
 		E0C26EB31258375D0023DE2C /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		E0C26EB41258375D0023DE2C /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		E0C26EB51258375D0023DE2C /* TableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TableViewController.xib; path = Classes/TableViewController.xib; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				E0C26EB51258375D0023DE2C /* TableViewController.xib */,
 				2899E5210DE3E06400AC0155 /* TableViewTestViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				E09639B113941AD5007F7688 /* glow.png */,
 				8D1107310486CEB800E47090 /* 3x5-Info.plist */,
 				E06CF0DA12D8215C00018340 /* CardHUD.xib */,
 			);
@@ -231,6 +234,7 @@
 				E0FFA6E212AFE6F50025D849 /* icon@2x.png in Resources */,
 				E0FFA71612B59D130025D849 /* untitled.xib in Resources */,
 				E06CF0DB12D8215C00018340 /* CardHUD.xib in Resources */,
+				E09639B213941AD5007F7688 /* glow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
